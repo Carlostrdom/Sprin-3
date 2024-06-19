@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="raflle">
+      <header>
+        <nav class="navbar">
+          <div class="nav-links">
+            <a class="navbarA" href="./index.html">Home</a>
+            <a class="navbarA" href="./About.html">About</a>
+            <a class="navbarA" href="./Contact.html">Contact</a>
+            <a class="navbarA" href="./more-information.html"
+              >More-information</a
+            >
+            <a class="navbarA" href="./benefits.html">Benefits</a>
+            <a class="navbarA" href="./raflle.html">Rafle</a>
+          </div>
+        </nav>
+        <img
+          src="./image/logo.png"
+          alt="Ice Cream Shop Logo"
+          class="nav-logo"
+        />
+      </header>
+
+      <main>
+        <section>
+          <div class="title-rafll">
+            <h1>RAFLLE</h1>
+            <p>
+              You can collaborate to hold an exhibition event and participate in
+              a raflle to win an easel
+            </p>
+          </div>
+        </section>
+
+        <div class="map-date">
+          <section>
+            <h2>Our location is located at:</h2>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15904.788391321306!2d-74.0410169!3d4.7357933999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f856ff1555555%3A0x9e90a908ef1565cb!2sColegio%20Anglo%20Colombiano!5e0!3m2!1ses-419!2sco!4v1718294871313!5m2!1ses-419!2sco"
+              width="350"
+              height="350"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </section>
+          <form action="./show_data.html" method="get">
+            <fieldset class="containerD">
+              <label for="name" class="datos">
+                Name
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="your name"
+                  required
+                />
+              </label>
+              <label for="lastname" class="datos">
+                Last name
+                <input
+                  type="text"
+                  name="lastname"
+                  id="lastname"
+                  placeholder="your last name"
+                  required
+                />
+              </label>
+
+              <label class="datos">
+                Choose Meet or Zoom
+                <select name="select">
+                  <option value="Meet">Meet</option>
+                  <option value="Zoom">Zoom</option>
+                </select>
+              </label>
+
+              <label class="datos">
+                Choose date
+                <input type="date" name="date" />
+              </label>
+
+              <label>Payment Options</label>
+              <label for="Cash">
+                <input type="radio" id="Cash" name="pago" value="Cash" /> Cash
+              </label>
+              <label>
+                <input
+                  type="radio"
+                  id="Credit Card"
+                  name="pago"
+                  value="Credit Card"
+                />
+                Credit Card
+              </label>
+              <label>
+                <input
+                  type="radio"
+                  id=" Debit Card"
+                  name="pago"
+                  value="Debit Card"
+                />
+                Debit Card
+              </label>
+
+              <label for="Message" class="datos">
+                Message (Optional)
+                <textarea
+                  name="message"
+                  id="message"
+                  cols="20"
+                  rows="5"
+                  placeholder="send message"
+                ></textarea>
+              </label>
+
+              <div class="inline">
+                <label>
+                  <input
+                    type="checkbox"
+                    name="terms"
+                    value="accept TYC"
+                    required
+                  />
+                  I accept terms and conditions..
+                </label>
+                <button type="submit">submit</button>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </main>
+
+      <footer>
+        <p>&copy; 2024 Ice Cream Shop. All rights reserved.</p>
+      </footer>
+    </div>
+  </body>
+</html>
